@@ -1,0 +1,16 @@
+{
+  "name": "primer_design",
+  "version": "1.0.0",
+  "description": "primer_design_ui",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwind build css/tailwincss.css -o css/tailwind.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
