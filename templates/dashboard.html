@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Design Primer</title>
     <script src="https://unpkg.com/vue@next"></script>
     <link rel="stylesheet" href="/static/css/tailwind.css">
 </head>
 <body>
-    <!-- This example requires Tailwind CSS v2.0+ -->
-
     <div id="app">
         <nav class="bg-gray-800">
             <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -113,12 +111,6 @@
         <!-- dashboard start -->
         <div :class="{hidden: cur_page!=='dashboard'}" class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="text-2xl font-bold leading-8 text-center pt-6">dashboard</div>
-            <div class="flex-1 ">
-                <p class="">
-                    {{ counter }}
-                </p>
-                <button @click="addOne" class="">+1</button>
-            </div>
         </div>
         <!-- dashboard end -->
 

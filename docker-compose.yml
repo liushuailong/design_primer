@@ -1,0 +1,26 @@
+version: "3"
+services:
+  db:
+    image: mysql
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      - MYSQL_DATABASE=primer
+      - MYSQL_ROOT_PASSWORD=primer
+      - MYSQL_USER=primer
+      - MYSQL_PASSWORD=primer
+      - MYSQL_ROOT_HOST=%
+    volumes:
+      - ./mysql/dbstore:/var/lib/mysql:rw
+      - ./mysql/conf.d:/etc/mysql/conf.d
+    ports:
+      - "3366:3306"
+    restart: always
+
+  web:
+    build: .
+    image: primer_web
+    ports:
+      - "4444:8000"
+    volumes:
+      - .:/slliu
+    command: python3 server.py
