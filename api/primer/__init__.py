@@ -5,4 +5,3 @@
 
 from sanic import Blueprint
 
-content = Blueprint.group("", url_prefix="/api")

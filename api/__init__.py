@@ -4,6 +4,3 @@
 # @describe: 
 
 from sanic import Blueprint
-from .static import static
-
-content = Blueprint.group(static, url_prefix="/static")
