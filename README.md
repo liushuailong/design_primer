@@ -5,7 +5,7 @@
 <h2>方法</h2>
 <ol>
 <li>环境的安装<br />
-<pre class="language-python"><code># sonic 包的安装
+<pre class="language-python"><code># sanic 包的安装
 # python 3.9​</code></pre>
 </li>
 <li>服务器端的编写</li>
